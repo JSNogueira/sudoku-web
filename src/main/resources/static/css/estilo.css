@@ -1,0 +1,47 @@
+body {
+        font-family: Arial, sans-serif;
+        justify-content: center;
+        margin-top: 50px;
+}
+
+table {
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse: collapse;
+}
+
+td {
+        border: 1px solid #333;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+}
+
+input {
+        width: 85%;
+        height: 85%;
+        text-align: center;
+        font-size: 18px;
+        border: none;
+}
+
+/* Linhas mais grossas para separar as 3x3 regiões */
+td:nth-child(3n) {
+        border-right: 2px solid #000;
+}
+
+tr:nth-child(3n) td {
+        border-bottom: 2px solid #000;
+}
+
+td:first-child {
+        border-left: 2px solid #000;
+}
+
+tr:first-child td {
+        border-top: 2px solid #000;
+}
+
+h1 {
+       text-align: center; 
+}
