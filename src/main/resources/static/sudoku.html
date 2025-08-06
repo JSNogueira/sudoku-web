@@ -7,22 +7,11 @@
 </head>
 <body>
     <h1> Sudoku Web </h1>
-  <table>
+  <table id="sudoku-board">
     <tbody>
-      <!-- Gera 9 linhas -->
-      <!-- Cada célula é um input de 1 dígito -->
-      <!-- Você pode preencher valores fixos adicionando `value="5"` no input -->
-      <!-- Aqui é só um tabuleiro vazio -->
-      <!-- Cada tr = linha -->
-      <!-- Cada td = célula -->
-      <!-- Você pode gerar isso em loop com JS se preferir -->
-      <!-- Vou deixar manual para você ver -->
-      <!-- 9 linhas -->
-      <!-- 9 colunas -->
-      <!-- Aqui só 1 linha como exemplo, depois copie -->
       <!-- Linha 1 -->
       <tr>
-        <td><input type="text" maxlength="1"></td>
+        <td id="td00"><input type="text" maxlength="1"></td>
         <td><input type="text" maxlength="1"></td>
         <td><input type="text" maxlength="1"></td>
         <td><input type="text" maxlength="1"></td>
@@ -32,7 +21,6 @@
         <td><input type="text" maxlength="1"></td>
         <td><input type="text" maxlength="1"></td>
       </tr>
-      <!-- Repita o bloco acima 8 vezes -->
       <!-- Linha 2 -->
       <tr>
         <td><input type="text" maxlength="1"></td>
@@ -131,5 +119,7 @@
       </tr>
     </tbody>
   </table>
+
+  <script src="scripts/sudoku.js"></script>
 </body>
 </html>
