@@ -12,20 +12,20 @@
       <!-- Linha 1 -->
       <tr>
         <td id="td00"><input type="text" maxlength="1"></td>
-        <td><input type="text" maxlength="1"></td>
-        <td><input type="text" maxlength="1"></td>
-        <td><input type="text" maxlength="1"></td>
-        <td><input type="text" maxlength="1"></td>
-        <td><input type="text" maxlength="1"></td>
-        <td><input type="text" maxlength="1"></td>
-        <td><input type="text" maxlength="1"></td>
-        <td><input type="text" maxlength="1"></td>
+        <td id="td01"><input type="text" maxlength="1"></td>
+        <td id="td02"><input type="text" maxlength="1"></td>
+        <td id="td03"><input type="text" maxlength="1"></td>
+        <td id="td04"><input type="text" maxlength="1"></td>
+        <td id="td05"><input type="text" maxlength="1"></td>
+        <td id="td06"><input type="text" maxlength="1"></td>
+        <td id="td07"><input type="text" maxlength="1"></td>
+        <td id="td08"><input type="text" maxlength="1"></td>
       </tr>
       <!-- Linha 2 -->
       <tr>
-        <td><input type="text" maxlength="1"></td>
-        <td><input type="text" maxlength="1"></td>
-        <td><input type="text" maxlength="1"></td>
+        <td id="td10"><input type="text" maxlength="1"></td>
+        <td id="td11"><input type="text" maxlength="1"></td>
+        <td id="td12"><input type="text" maxlength="1"></td>
         <td><input type="text" maxlength="1"></td>
         <td><input type="text" maxlength="1"></td>
         <td><input type="text" maxlength="1"></td>
@@ -119,6 +119,11 @@
       </tr>
     </tbody>
   </table>
+
+  <div style="text-align: center;">
+    <button type="button" onclick="loadSudoku()"> Iniciar novo jogo </button>
+    <button type="button" onclick="enviarTabuleiro()"> Validar </button>
+  </div>
 
   <script src="scripts/sudoku.js"></script>
 </body>
