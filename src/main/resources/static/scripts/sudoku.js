@@ -1,6 +1,6 @@
 async function loadSudoku() {
     try {
-        const response = await fetch('http://localhost:8080/api/sudoku/new');
+        const response = await fetch('https://web-production-4c280.up.railway.app/api/sudoku/new');
         const board = await response.json();
 
         const table = document.getElementById('sudoku-board');
@@ -54,7 +54,7 @@ function enviarTabuleiro() {
         board.push(row);
     }
 
-    fetch("http://localhost:8080/api/sudoku/validar", {
+    fetch("https://web-production-4c280.up.railway.app/api/sudoku/validar", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(board),
