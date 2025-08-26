@@ -31,10 +31,6 @@ public class SudokuController {
         celulas = sudokuService.preencherCelulas();
     }
 
-    // @PostMapping("path")
-    // public String postMethodName(@RequestBody String entity) {
-    // return entity;
-    // }
 
     @PostMapping("/validar")
     public ResponseEntity<Map<String, String>> validarTabuleiro(@RequestBody int[][] tabuleiro) {
